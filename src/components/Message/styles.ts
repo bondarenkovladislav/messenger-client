@@ -24,12 +24,11 @@ export const MessageRoot = styled.div`
     .text {
       max-width: 450px;
       font-size: 14px;
-      background: #2d7cc1;
-      color: #fff;
       padding: 12px 15px;
       border-radius: 15px;
       border-top-left-radius: 2px;
       border-bottom-left-radius: 2px;
+      border: 1px solid rgba(var(--bb2, 239, 239, 239), 1);
     }
   }
   &.__first__last {
