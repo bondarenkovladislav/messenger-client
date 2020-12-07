@@ -12,7 +12,7 @@ function App() {
   // use our hook
   const ws = useWebSocketLite({
     // socketUrl: "ws://localhost:777",
-    socketUrl: "ws://hybrid-messanger-server-1622.herokuapp.com/",
+    socketUrl: "wss://hybrid-messanger-server-1622.herokuapp.com/",
   });
   useWebSocketHandler(ws);
 
