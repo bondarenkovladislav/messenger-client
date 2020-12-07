@@ -1,4 +1,5 @@
-const host = "http://localhost:777";
+// const host = "http://localhost:777";
+const host = "https://hybrid-messanger-server-1622.herokuapp.com/";
 
 export const apiCall = (query: string) =>
   fetch(`${host}/graphql`, {

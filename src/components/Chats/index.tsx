@@ -22,7 +22,7 @@ const Chats = ({ collection, selected, me, searchValue }: IProps) => {
 
   useEffect(() => {
     if (me._id) {
-      loadChats(me._id);
+      loadChats();
     }
   }, [me]);
 

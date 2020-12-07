@@ -27,8 +27,8 @@ const buildChats = (collection: any[]) => {
   });
 };
 
-export const loadChats = (userId: string) => {
-  fetchChats(userId).then((data) => {
+export const loadChats = () => {
+  fetchChats(store.getState().user.me._id).then((data) => {
     const chats = buildChats(data);
     store.dispatch(roomSelectAction(chats[0]));
     if (chats.length) {
@@ -60,5 +60,5 @@ export const createChat = async (
   targetUserId: string
 ) => {
   await createChatApi(currentUserId, targetUserId);
-  loadChats(currentUserId);
+  loadChats();
 };
