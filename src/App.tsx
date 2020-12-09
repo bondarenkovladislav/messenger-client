@@ -6,16 +6,7 @@ import { Login } from "./components/Login";
 import Main from "./components/Main";
 import Register from "./components/Register";
 
-import useWebSocketLite from "./hooks/webSocketHook";
-import { useWebSocketHandler } from "./hooks/webSocketHandler";
 function App() {
-  // use our hook
-  const ws = useWebSocketLite({
-    // socketUrl: "ws://localhost:777",
-    socketUrl: "wss://hybrid-messanger-server-1622.herokuapp.com/",
-  });
-  useWebSocketHandler(ws);
-
   return (
     <>
       <CssBaseline />

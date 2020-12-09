@@ -49,7 +49,7 @@ const Chats = ({ collection, selected, me, searchValue }: IProps) => {
               button
               onClick={(event) => onRoomClick(event, chat)}
               className={`userItem ${
-                selected._id === chat._id ? "__active" : ""
+                selected && selected._id === chat._id ? "__active" : ""
               } ${"chatsListItem"}`}
             >
               <Chat chat={chat} />
